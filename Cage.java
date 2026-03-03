@@ -16,7 +16,6 @@ public class Cage {
         // TODO: instantiate animals
         // TODO: add at least one new Animal() to the list
         ArrayList<Animal> animals = new ArrayList<Animal>();
-        animals.add(Animal());
         animals.add(new Animal());
     }
 
@@ -40,7 +39,11 @@ public class Cage {
 
     public Animal getAnimalAtIndex(int index) {
         // TODO: return the animal at index (or null if invalid)
-        return null;
+        if (index < animals.size()) {
+            return animals.get(index);
+        } else {
+            return null;
+        }
     }
 
     // ===== Behaviors =====
@@ -53,7 +56,7 @@ public class Cage {
     }
 
     /**
-     * REQUIRED: remove an animal if it exists; return true if removed.
+     * REQUIRED: remove an animal if it exists;
      */
     public void removeAnimal(Animal animal) {
         if (animals.contains(animal)) {
@@ -65,10 +68,10 @@ public class Cage {
     public String toString() {
         // TODO: return a friendly description including all animals
         // Example: "Cage with 3 animals: [Animal{...}, Animal{...}]"
-        return "Cage has " + getNumAnimals() + Animal;
+        return "Cage has " + getNumAnimals() + " animals " + animals;
     }
     public static void main(String[] args) {
        Cage cage1 = new Cage();
-       System.out.println(cage1);
+       System.out.println(animals.get(0));
     }
 }
