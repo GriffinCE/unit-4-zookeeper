@@ -58,10 +58,12 @@ public class Cage {
     /**
      * REQUIRED: remove an animal if it exists;
      */
-    public void removeAnimal(Animal animal) {
+    public boolean removeAnimal(Animal animal) {
         if (animals.contains(animal)) {
             animals.remove(animal);
+            return true;
         }
+        return false;
     }
 
     @Override
