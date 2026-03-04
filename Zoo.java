@@ -32,6 +32,7 @@ public class Zoo {
     public Zoo(int numCages) {
         // TODO: instantiate cages
         // TODO: add numCages cages (each should start with at least one animal)
+        cages = new ArrayList<Cage>();
         for (int i = numCages; i > 0; i--) {
             cages.add(new Cage());
         }
@@ -123,6 +124,6 @@ public class Zoo {
         // Try adding to a cage that does NOT belong to this zoo
         
         // Speak demo
-        
+        // no
     }
 }
