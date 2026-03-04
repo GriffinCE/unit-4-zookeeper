@@ -15,7 +15,7 @@ public class Cage {
     public Cage() {
         // TODO: instantiate animals
         // TODO: add at least one new Animal() to the list
-        ArrayList<Animal> animals = new ArrayList<Animal>();
+        animals = new ArrayList<Animal>();
         animals.add(new Animal());
     }
 
@@ -72,6 +72,6 @@ public class Cage {
     }
     public static void main(String[] args) {
        Cage cage1 = new Cage();
-       System.out.println(animals.get(0));
+       System.out.println(cage1.animals.get(0));
     }
 }

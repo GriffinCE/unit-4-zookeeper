@@ -18,7 +18,7 @@ public class Zoo {
     public Zoo() {
         // TODO: instantiate cages
         // TODO: add 3 new Cage() objects to cages
-        ArrayList<Cage> cages = new ArrayList<Cage>();
+        cages = new ArrayList<Cage>();
         cages.add(new Cage());
         cages.add(new Cage());
         cages.add(new Cage());
@@ -74,7 +74,7 @@ public class Zoo {
         // - verify from and to are in this Zoo
         // - verify animal is in from
         // - remove from 'from' and add to 'to'
-        if (cages.contains(from) && cages.contains(to) && from.removeAnimal(animal)) {
+        if (cages.contains(from) && cages.contains(to)) {
             to.addAnimal(animal);
             return true;
         }
@@ -107,9 +107,10 @@ public class Zoo {
 
     // ===== Main for Testing (not graded) =====
     public static void main(String[] args) {
-
         // Create a zoo with default constructor
         Zoo zoo = new Zoo();
+        System.out.println(zoo);
+
         // Demonstrate howManyAnimals
         System.out.println("There is " + zoo.howManyAnimals() + " animals in the zoo");
         // Try adding a new animal into cage 0
