@@ -85,7 +85,7 @@ public class Animal {
     }
 
     public String toString() {
-        return "Animal is a " + getAnimalType() + " and animal sound is " + speak();
+        return "Animal is a " + animalType + " and animal sound is " + speak();
     }
     public static void main(String[] args) {
       Animal animal = new Animal();
